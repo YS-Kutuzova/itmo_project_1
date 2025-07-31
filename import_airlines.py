@@ -2,9 +2,7 @@ import json
 import re
 
 """
-This is a docstring notation for 
-prekrasnaya Kseniia
-sdsd
+Unfortunately deleted
 """
 
 
