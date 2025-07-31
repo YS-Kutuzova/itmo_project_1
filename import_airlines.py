@@ -1,6 +1,13 @@
 import json
 import re
 
+"""
+This is a docstring notation for 
+prekrasnaya Kseniia
+sdsd
+"""
+
+
 with open("airlines.json", mode="r", encoding="utf-8") as read_file:
     airlines_data = json.load(read_file)
 
