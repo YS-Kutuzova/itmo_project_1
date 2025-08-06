@@ -8,7 +8,8 @@ def print_routes_data():
             host="localhost",
             database="FlightsPyProject",
             user="postgres",
-            password="8852"
+            password="8852",
+            port="5432"
         )
         cursor = connection.cursor()
 
@@ -158,3 +159,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
