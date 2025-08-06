@@ -1,6 +1,8 @@
 import psycopg2
 
 def print_routes_data():
+    connection = None
+    cursor = None
     try:
         connection = psycopg2.connect(
             host="localhost",
@@ -41,8 +43,10 @@ def print_routes_data():
         print("Error with PostgreSQL:", error)
         return []
     finally:
-        cursor.close()
-        connection.close()
+        if cursor:
+            cursor.close()
+        if connection:
+            connection.close()
 
 def display_all_flights(routes):
 
@@ -152,4 +156,5 @@ def main():
         input("\nPress 'Enter' to continue...")
 
 if __name__ == "__main__":
+
     main()
